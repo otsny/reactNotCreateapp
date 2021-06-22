@@ -1,0 +1,31 @@
+<html lang="ja">
+    <head>
+        <meta charset="utf-8">
+        <title>Reactで要素描画</title>
+        <!-- React 本体-->
+        <script src="https://unpkg.com/react/umd/react.development.js"></script>
+        <!-- React DCM-->
+        <script src ="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+        <!-- Babel -->
+        <script src ="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type ="text/babel">
+            function Box(props) {
+                return(
+                    <h1 style={{background: props.color}}>Title is {props.title}. Coloer is {props.color}</h1>
+                );
+            }
+            ReactDOM.render(
+                <div>
+                    <Box title='PROPS' color='skyblue'/>   
+                    <Box/>   
+                    <Box/>   
+                </div>
+                ,
+                document.getElementById('root')
+            );
+        </script>
+    </body> 
+</html>

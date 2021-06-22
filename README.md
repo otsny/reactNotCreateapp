@@ -22,7 +22,7 @@ $ yarn add -D html-webpack-plugin http-server
 Error: Cannot find module 'webpack-cli/bin/config-yargs' のエラーがでる
 →　webpack-cliのバージョン4系には、config-yargsが含まれていないのでエラーとなってる
      最新は 4.0
-     "webpack-cli": "^3.3.12", 　にするか
+     "webpack-cli": "^3.3.12", 　にするか下記
 
     webpack-cli serve --mode development
     元のソース
@@ -30,7 +30,5 @@ Error: Cannot find module 'webpack-cli/bin/config-yargs' のエラーがでる
 
     参照元：https://qiita.com/whiteraccoon/items/f0675297fce333ac9474
         CSCはwebpack-dev-serverを利用していた（webpack:3.3.3)
-
-yarn add -D yargs       ※記載は無いが、エラーになったので追加した
 
 
